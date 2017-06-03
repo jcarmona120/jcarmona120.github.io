@@ -26,7 +26,7 @@ This little snippet from Learn Node with Wes Bos on how to prevent users from pr
 
 + Call an event listener on the input field (input.addEventListener)
 + Call the event which is 'keydown'
-+ Calling the parameter (e) for event, you create an if statement.
++ Call a function with the paramenter (e) for event. Then create an if statement in that function. 
 + In the if statement, you declare that if the keyCode of the key pressed is the Enter Key (13), then preventDefault()
 + preventDefault() is the go to function to stop the form from submitting. The default causes submission and refreshes the page. 
 
