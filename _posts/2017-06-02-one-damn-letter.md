@@ -12,7 +12,7 @@ Two days ago, I could not figure out what was wrong. None of the illustration an
 
 Turns out, for two days, I had missed a stupid letter in my post slug name declaration. The _$query_ for the Loop requires a _'post_type'_ and _'category_name'_. I had been calling _'post-type' => 'illustration'_ when my field name was **'illustrations'** with A DAMN S!
 
-![posttype mistake](/assets/img/posttypemistake.jpg)
+![posttype mistake]({{ site.url }}/assets/image.png/assets/img/posttypemistake.jpg)
 
 When I finally fingured out I missed the 's' at the end of 'illustration', I was so happy. Such a little thing. Driving me crazy. It was a huge breakthrough for the project. I really needed to finish that so I could focus on the finishing the project. All I need to do is go through some styling issues (including making it responsive!). 
 
@@ -22,7 +22,7 @@ I'll keep you updated on how the project is going and take on of these days to m
 
 This little snippet from Learn Node with Wes Bos on how to prevent users from prematurely submitting a form with the Enter Key. He uses ES6 all the time which is really my favorite thing right now. 
 
-![posttype mistake](/assets/img/keydown.jpg)
+![posttype mistake]({{ site.url }}/assets/image.png/assets/img/keydown.jpg)
 
 + Call an event listener on the input field (input.addEventListener)
 + Call the event which is 'keydown'
