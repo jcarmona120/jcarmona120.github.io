@@ -2,4 +2,8 @@ name: Jawann Carmona, Web Developer, Aspiring Idris Elba
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
-
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
