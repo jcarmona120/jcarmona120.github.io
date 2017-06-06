@@ -2,6 +2,7 @@
 layout: post
 title: "The Terminal-ator"
 date: 2017-06-05
+published: true
 ---
 
 ### THE TERMINAL
