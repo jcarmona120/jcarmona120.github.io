@@ -12,6 +12,3 @@ defaults:
 {% for myimage in image_files %}
   {{ myimage.path }}
 {% endfor %}
-
-sass:
-    sass_dir: _sass
