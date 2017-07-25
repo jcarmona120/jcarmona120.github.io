@@ -7,3 +7,8 @@ defaults:
       path: "assets/img"
     values:
       image: true
+
+sass:
+    sass_dir: _sass
+
+plugins_dir: jekyll-coffeescript
