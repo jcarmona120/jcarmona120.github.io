@@ -1,0 +1,56 @@
+ul {
+  list-style: none
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: 
+  "nav header"
+  "main main"
+    
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  justify-content: end;
+
+}
+
+.header__title {
+  font-family: $titleFont
+}
+
+.nav {
+  grid-area: nav;
+  color: black;
+}
+
+.nav__menu {
+  font-size: 1.3em;
+}
+
+.main {
+  grid-area: main;
+}
+
+#pizzasticker {
+  height: 10%;
+  width: 10%;
+  margin: auto;
+  animation: roll 10s infinite alternate;
+  transform: rotate(360deg);
+
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
