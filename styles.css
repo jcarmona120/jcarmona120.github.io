@@ -223,7 +223,7 @@ img {
 .experience {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 40vh;
 }
 
 .resources-list {
