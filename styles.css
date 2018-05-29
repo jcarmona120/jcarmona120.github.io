@@ -1,56 +1,253 @@
 ul {
-  list-style: none
+    list-style: none
 }
 
-.wrapper {
-  display: grid;
-  grid-gap: 3px;
-  grid-template-columns: 30% 70%;
-  grid-template-areas: 
-  "nav header"
-  "main main"
-    
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: green;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: hotpink;
+}
+
+
+/* selected link */
+
+a:active {
+    color: blue;
+}
+
+img {
+    width: 100%;
 }
 
 .header {
-  grid-area: header;
-  display: grid;
-  justify-content: end;
-
+    font-family: 'Tajawal', sans-serif;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .header__title {
-  font-family: $titleFont
+    display: flex;
+    align-items: center;
+    border-bottom: .2em solid green;
 }
 
 .nav {
-  grid-area: nav;
-  color: black;
+    grid-area: nav;
+    color: black;
 }
 
 .nav__menu {
-  font-size: 1.3em;
+    font-size: 1.3em;
+    display: flex;
+}
+
+.nav__menu>li {
+    padding: 0 .5em;
+}
+
+.aboutMe__image {
+    width: 50%;
+    border-radius: 50%;
+    border: 1.5em solid orange;
 }
 
 .main {
-  grid-area: main;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 90%;
+    margin: 0 auto;
+    grid-gap: 2em;
+}
+
+.projects {
+    text-align: center;
 }
 
 #pizzasticker {
-  height: 10%;
-  width: 10%;
-  margin: auto;
-  animation: roll 10s infinite alternate;
-  transform: rotate(360deg);
-
+    height: 10%;
+    width: 4%;
+    margin: 1em;
+    animation: move 10s infinite alternate;
+    transform: rotate(360deg), translateX(300px);
 }
 
 @keyframes roll {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
+@keyframes move {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-100px)
+    }
+}
+
+.main {
+    display: grid;
+}
+
+.project-title {
+    font-family: 'Tajawal';
+    font-size: 1.5em;
+}
+
+.project-description {
+    width: 90%;
+}
+
+#kcresponsive {
+    display: flex;
+    padding: 3em 0;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 90vh;
+}
+
+.aboutMe-description {
+    width: 60%;
+}
+
+.aboutMe-list {
+    display: flex;
+}
+
+.portfolio-title {
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: .2em solid green;
+    width: 20%;
+    margin-bottom: 2em;
+}
+
+.skills-title {
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: .2em solid green;
+    width: 20%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.aboutMe__skills>li {
+    background-color: orange;
+    margin: .5em .2em;
+    color: white;
+    padding: .5em .5em;
+    text-align: center;
+    font-size: 1em;
+    border: 2px solid black;
+    height: 10%;
+    text-transform: uppercase;
+}
+
+.skills {
+    height: 100vh;
+}
+
+.tech {
+    display: flex;
+    width: 83%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tech>li {
+    background-color: green;
+    margin: .5em .2em;
+    color: white;
+    padding: .5em .5em;
+    text-align: center;
+    font-size: 1em;
+    border: 2px solid black;
+    height: 10%;
+    text-transform: uppercase;
+}
+
+.tech-skills {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tech-skills>li {
+    padding: 1em;
+}
+
+#kcphone {
+    width: 50%;
+    position: relative;
+    top: 22%;
+    left: -22%;
+}
+
+.cinnamonmobile {
+    width: 30%;
+}
+
+.rentalbayshz {
+    width: 50%;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.resources-list {
+    display: flex;
+}
+
+.footer-links {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.footer-links>li {
+    padding: 2em 1em;
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        grid-template-columns: 100%;
+    }
+    .aboutMe {
+        flex-direction: column;
+        text-align: center;
+    }
+}

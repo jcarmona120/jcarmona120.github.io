@@ -1,87 +1,235 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Jawann of All Trades</title>
-  <link rel="stylesheet" type="text/css" href="./styles.css">
+    <meta width="device-width">
+    <title>Jawann of All Trades</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Tajawal" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
+
 <body>
-  <div class="wrapper">
-     <header class="header">
-      <div class="header__title">
-        <h1>Jawann Carmona</h1>
-        <p>Front End Web Developer</p>
-        <img id="pizzasticker" src="pizza.png">
-      </div>
-    </header>
-  
-  <nav>
-    <ul class="nav__menu">
-      <li>PORTFOLIO</li>
-      <li>BLOG</li>
-      <li>BOOKSHELF</li>
-      <li>ABOUT</li>
-      <li>OTHER HUSTLES</li>
-    </ul>
-  </nav>
-</div>
-  <div class="main">
-      <br>
+    <div class="wrapper">
+        <!-- <header class="header">
 
-      <h3> Latest Projects</h3>
+            <nav>
+                <ul class="nav__menu">
+                    <li>PORTFOLIO</li>
+                    <li>BLOG</li>
+                    <li>ABOUT</li>
+                </ul>
+            </nav>
 
-      <div class="projects">
-        <h3><a href="http://www.thekitchenclash.com/" target="_blank">Kitchen Clash</a></h3>
-        <p>Kitchen Clash (I'm one of the founders!) website. Designed and built entire website. Even edited the video myself.</p>
-        <p>Node.js and ExpressJS (serving up Mailchimp API and Sendgrid API), Javascript(ES6), HTML5/CSS3, MaterializeCSS, Responsive Mobile Design </p>
-      </div>
+        </header> -->
+        <div class="aboutMe">
+            <picture>
+                <img src="jawann.jpg" alt="" class="aboutMe__image">
+            </picture>
+            <div class="aboutMe-description">
+                <div>
+                    <h1 class="header__title" data-aos="slide-left" data-aos-duration="2500">Jawann Carmona</h1>
+                </div>
+                <div data-aos="slide-up" data-aos-duration="2500">
+                    <p>Full Stack Javascript Web Developer</p>
+                    <p>
+                        I am a driven, self-taught web developer excited to provide highly performant, responsive websites. Currently, I am a freelance junior web developer for <a href="http://13milliseconds.com/">13milliseconds</a> and am attending Udacity's
+                        online Nanodegree program, Mobile Web Specialist. Over the past few years, I have created a <a href="https://www.youtube.com/watch?v=BMKfJ0rEjDo">youtube sketch video with over 10k views</a>, run a successful standup comedy show,
+                        and started a culinary event company called
+                        <a href="http://www.thekitchenclash.com">Kitchen Clash</a>.
+                    </p>
+                    <p>
+                        <a href="https://medium.com/@jawanncarmona">Check out my latest blog post here!</a>
+                    </p>
+                </div>
 
-      <div class="projects">
-        <h3><a href="http://www.studiophantasmagoria.com" target="_blank">Studio Phantasmagoria</a></h3>
-        <p>Multimedia Artist Portfolio. Created theme myself from scratch.</p>
-        <p>Wordpress/PHP, Javascript, JQuery, HTML5/CSS3. Custom Post Types/Advanced Custom Fields, Responsive Mobile Design</p>
-      </div>
-  
-      <div class="projects">
-        <h3><a href="http://www.jovonoutlaw.com" target="_blank">Jovon Outlaw - Director of Photography</a></h3>
-        <p>Multimedia Artist Portfolio. Created theme myself from scratch.</p>
-        <p>React, Bootstrap, and the Wordpress API.</p>
-      </div>
+            </div>
+        </div>
 
-      <div class="projects">
-        <h3><a href="http://cinnamonapp.herokuapp.com" target="_blank">Cinnamon</a></h3>
-        <p>Proof Of Concept for App that helps writers find synonyms, rhyming words, and other forms of inspiration.</p>
-        <p>Built on React. CSS3/FlexBox. Using DataMuse API/Axios to serve data.</p>
-      </div>
 
- 
-      <div class="projects">
-        <h3><a href="http://www.davidmerinodp.com" target="_blank">David Merino - Cinematographer</a></h3>
-        <p>Cinematography portfolio built on customized Squarespace theme.</p>
-        <p>JSON-T, HTML5/CSS3, Squarespace Design Interface</p>
-      </div>
 
-      <div class="projects">
-        <h3><a href="https://socketchatapp120.herokuapp.com" target="_blank">Chat App Prototype</a></h3>
-        <p>A chat application (based on a tutorial) that allows everyone to send messages and send their current location. (Still in Progress)</p>
-        <p>Node.js, Socket.IO, jQuery, JavaScript, HTML5/CSS3, and Mustache.js</p>
-      </div>
 
-      <div class="projects">
-        <h3><a href="http://www.ahtuki.com/jaunt" target="_blank">Jaunt Calculator</a></h3>
-        <p>Side project creating footage estimation calculator for Jaunt VR camera.</p>
-        <p>JQuery, HTML/CSS, and good ol' math!</p>
-      </div>
 
-      <div class="projects">
-        <h3><a href="http://ahtuki.com/sixtyplaza/" target="_blank">Sixty Plaza East</a></h3>
-        <p>Building board wanted quick turnaround of basic prototype for website. (Project in Progress)</p>
-        <p>Bootstrap, JQuery, HTML5/CSS3, Javascript, Google Firebase</p>
-      </div>
+
+
+
+
     </div>
-</div>
-</div>
-<div>
-  
-</body>
-</html>
 
+    <h2 class="portfolio-title">PORTFOLIO</h2>
+
+    <div class="main">
+
+
+        <div class="projects kitchenclash">
+
+            <h3 class="project-title"><a href="http://www.thekitchenclash.com/" target="_blank">Kitchen Clash</a></h3>
+            <div id="kcresponsive" class="projects__images" data-aos="fade-up">
+
+                <picture>
+                    <img src="kitchenclash.png" alt="Kitchen Clash Home Page on Desktop">
+                </picture>
+                <picture>
+                    <img id="kcphone" src="kcphone.png" alt="Kitchen Clash Home Page on Iphone">
+                </picture>
+
+            </div>
+            <div>
+                <ul class="tech">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>APIs</li>
+                </ul>
+            </div>
+            <p class="project-description">
+                Created a six page website that offered information about Kitchen Clash, a signup form, and contact form. PS - I'm the co-founder of Kitchen Clash!
+            </p>
+        </div>
+
+        <div class="projects">
+            <h3 class="project-title"><a href="http://www.studiophantasmagoria.com" target="_blank">Studio Phantasmagoria</a></h3>
+            <picture class="computers" data-aos="fade-up">
+                <img src="splaptop.png" alt="Studio Phantasmagoria Home Page on Laptop">
+            </picture>
+            <div>
+                <ul class="tech">
+                    <li>Wordpress</li>
+                    <li>PHP</li>
+                    <li>JS/JQuery</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>CUSTOM POST TYPES</li>
+                    <li>Advanced Custom Fields</li>
+                </ul>
+            </div>
+
+            <p class="project-description">Multimedia Artist Portfolio that was built on Wordpress. Theme design was created from scratch.</p>
+        </div>
+
+        <div class="projects">
+
+            <h3 class="project-title"><a href="http://cinnamonapp.herokuapp.com" target="_blank">Cinnamon</a></h3>
+            <picture data-aos="fade-up">
+                <img src="cinnamonmobile.png" alt="Studio Phantasmagoria Home Page on Laptop" class="cinnamonmobile">
+            </picture>
+            <div>
+                <ul class="tech">
+                    <li>React</li>
+                    <li>API</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+            <p class="project-description">Proof Of Concept for App that helps writers find synonyms, rhyming words, and other forms of inspiration.</p>
+        </div>
+
+        <div class="projects">
+            <h3 class="project-title"><a href="http://ahtuki.com/rentalbays/v7/techBays.html" target="_blank">Rental Bays - AbelCine Map</a></h3>
+            <picture data-aos="fade-up">
+                <img src="rentalbayshz.png" alt="Studio Phantasmagoria Home Page on Laptop" class="rentalsbayshz">
+            </picture>
+            <div>
+                <ul class="tech">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Firebase</li>
+                </ul>
+            </div>
+
+            <p class="project-description">Designed multiple maps that reflected information input on an admin page for a film and video rental house. A vertical interface and admin page were built first using HTML5 and CSS. Utitlized CSS grid to build organize the bays correctly.
+                Used vanilla Javascript and a Firebase database to supply the data input from admin page to the front-facing vertical interface upon data change.
+            </p>
+        </div>
+
+        <div class="projects" data-aos="fade-up">
+            <h3 class="project-title"><a href="http://www.jovonoutlaw.com" target="_blank">Jovon Outlaw - Director of Photography</a></h3>
+            <picture data-aos="fade-up">
+                <img src="outlawlaptop.png" alt="Studio Phantasmagoria Home Page on Laptop" class="outlaw">
+            </picture>
+            <div>
+                <ul class="tech">
+                    <li>React</li>
+                    <li>Wordpress API</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+            <p class="project-description">React, Bootstrap, and the Wordpress API. Wordpress was used for the client to upload videos and change information easily. The entire page uses React with a React-bootstrap package for styling.</p>
+
+        </div>
+
+
+
+        <div class="projects">
+
+            <h3 class="project-title"><a href="http://www.ahtuki.com/dbclone" target="_blank">Daily Beast Clone</a></h3>
+            <picture data-aos="fade-up">
+                <img src="dailybeastclone.png" alt="cloned version of Daily Beast website" class="dbclone">
+            </picture>
+
+            <div>
+                <ul class="tech">
+                    <li>HTML</li>
+                    <li>CSS Grid</li>
+                    <li>JSON</li>
+                </ul>
+            </div>
+            <p class="project-description">
+                A clone of a the landing page of the Daily Beast website. Wanted to recreate a website design. My next steps is to use JSON to gather the news.
+            </p>
+        </div>
+
+
+
+
+    </div>
+    </div>
+
+    <section class="experience">
+        <h2 class="skills-title">SKILLS</h2>
+        <div class="skill-list">
+            <ul class="tech-skills">
+                <li data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">HTML5</li>
+                <li data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">CSS/SASS</li>
+                <li data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">JAVASCRIPT</li>
+                <li data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">NODE.JS</li>
+                <li data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">REACT</li>
+                <li data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">RESPONSIVE WEB</li>
+                <li data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">API</li>
+                <li data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">GIT/TERMINAL</li>
+                <li data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">UNIT TESTING</li>
+                <li data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">WORDPRESS</li>
+                <li data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">WEB PERFORMANCE</li>
+                <li data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">PROGRESSIVE WEB</li>
+                <li data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">UX DESIGN</li>
+
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <ul class="footer-links">
+                <li>
+                    <a href="www.github.com/jcarmona120">GITHUB</a>
+                </li>
+                <li>
+                    <a href="www.twitter.com/jawannforall">TWITTER</a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/jcarmona120/">CODEPEN</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
