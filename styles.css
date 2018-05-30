@@ -130,7 +130,7 @@ img {
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    height: 90vh;
+    height: 90%;
 }
 
 .aboutMe-description {
@@ -145,7 +145,7 @@ img {
     margin: 0 auto;
     text-align: center;
     border-bottom: .2em solid green;
-    width: 20%;
+    width: 40%;
     margin-bottom: 2em;
 }
 
@@ -171,7 +171,7 @@ img {
 }
 
 .skills {
-    height: 100vh;
+    height: 100%;
 }
 
 .tech {
@@ -223,7 +223,6 @@ img {
 .experience {
     display: flex;
     flex-direction: column;
-    height: 40vh;
 }
 
 .resources-list {
@@ -238,10 +237,6 @@ img {
     font-size: 1.5em;
 }
 
-.footer-links>li {
-    padding: 2em 1em;
-}
-
 @media screen and (max-width: 800px) {
     .main {
         grid-template-columns: 100%;
@@ -249,5 +244,11 @@ img {
     .aboutMe {
         flex-direction: column;
         text-align: center;
+    }
+    .footer-links {
+        display: block;
+    }
+    .footer-links>li {
+        padding: 0;
     }
 }
