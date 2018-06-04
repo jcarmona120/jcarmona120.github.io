@@ -115,10 +115,6 @@ img {
     font-size: 1.5em;
 }
 
-.project-description {
-    width: 90%;
-}
-
 #kcresponsive {
     display: flex;
     padding: 3em 0;
@@ -134,11 +130,15 @@ img {
 }
 
 .aboutMe-description {
-    width: 60%;
+    width: 80%;
 }
 
 .aboutMe-list {
     display: flex;
+}
+
+.aboutMe-blog {
+    font-size: 1.2em;
 }
 
 .portfolio-title {
@@ -199,7 +199,7 @@ img {
     flex-wrap: wrap;
     text-align: center;
     width: 80%;
-    margin: 0 auto;
+    justify-content: center;
 }
 
 .tech-skills>li {
@@ -238,6 +238,19 @@ img {
     font-size: 1.5em;
 }
 
+.footer-links>li {
+    padding: 1em;
+}
+
+@media screen and (min-width: 800px) {
+    .project-description {
+        width: 90%;
+    }
+    .tech-skills {
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .main {
         grid-template-columns: 100%;
@@ -246,10 +259,22 @@ img {
         flex-direction: column;
         text-align: center;
     }
+    .tech-skills {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .tech-skills>li {
+        padding: .2em;
+    }
+    footer {
+        width: 90%;
+    }
     .footer-links {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .footer-links>li {
-        padding: 0;
+        padding: .5em 0;
     }
 }
