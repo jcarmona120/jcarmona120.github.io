@@ -230,16 +230,14 @@ img {
     display: flex;
 }
 
-.footer-links {
+.carmona-links {
     display: flex;
-    text-align: center;
-    margin: 0 auto;
-    justify-content: center;
     font-size: 1.5em;
+    padding: 0;
 }
 
-.footer-links>li {
-    padding: 1em;
+.carmona-links>li {
+    padding: .5em .5em .5em 0;
 }
 
 @media screen and (min-width: 800px) {
