@@ -268,11 +268,14 @@ img {
     footer {
         width: 90%;
     }
-    .footer-links {
+    .carmona-links {
         display: flex;
         flex-direction: column;
     }
-    .footer-links>li {
+    .carmona-links>li {
         padding: .5em 0;
+    }
+    .header__title {
+        justify-content: center;
     }
 }
