@@ -1,0 +1,516 @@
+@import url(//fonts.googleapis.com/css?family=Fjalla+One|Cantarell);
+
+a {
+  text-decoration: none;
+  
+}
+
+
+
+.App-title {
+  color: white;
+  font-family: 'Fjalla One', monospace;
+  letter-spacing: .15em;
+  margin: 1em 0 0 0;
+}
+
+.App-title > a {
+  color: #EB7F00;
+}
+
+.App-title_subtitle {
+  margin: 0;
+  text-align: center;
+}
+
+.App-header {
+  background-color: #225378;
+  border-bottom: .5em solid orange;
+  padding: 0px;
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: .2em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-nav_link {
+  padding: 0 1em;
+  font-size: 1.2em;
+  font-family: 'Staatliches', sans-serif;
+}
+
+.App-nav_link > a {
+  color: #EB7F00;
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+
+
+/* visited link */
+
+
+/* mouse over link */
+
+/* selected link */
+
+/* img {
+  width: 70%;
+} */
+
+.header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  border-bottom: .2em solid green;
+}
+
+.nav {
+  grid-area: nav;
+  color: black;
+}
+
+.nav__menu {
+  font-size: 1.3em;
+  display: flex;
+}
+
+.nav__menu>li {
+  padding: 0 .5em;
+}
+
+.backToHome > a {
+  padding: 0 0 .5em 0;
+}
+
+.backArrow {
+  
+}
+
+.aboutMe__image {
+  width: 50%;
+  border-radius: 50%;
+  border: 1.5em solid #EB7F00;
+}
+
+
+.projects {
+  display: flex;
+    width: 80%;
+    flex-grow: 1;
+    margin: 0 auto;
+    align-items: center;
+    border: 1px solid #11A52E;
+    margin-top: 1em;
+    padding-left: .5em;
+}
+
+img {
+  height: auto;
+  text-align: center;
+}
+
+#pizzasticker {
+  height: 10%;
+  width: 4%;
+  margin: 1em;
+  animation: move 10s infinite alternate;
+  transform: rotate(360deg), translateX(300px);
+}
+
+@keyframes roll {
+  0% {
+      transform: rotate(0);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes move {
+  0% {
+      transform: translateX(0)
+  }
+  100% {
+      transform: translateX(-100px)
+  }
+}
+
+.main {
+  display: grid;
+}
+
+.project-title {
+  font-family: 'Fjalla One';
+  font-size: 1.3em;
+  color: #F8CA3F;
+  letter-spacing: .1em;
+  margin: 0 0 .4em 0;
+}
+
+.project-title > a {
+  color: #EB7F00;
+}
+
+.project-image-container {
+  margin: 1em 3em 1em 0;
+}
+
+.project-description {
+  font-family: 'Cantarell';
+  margin: 0;
+  width: 95%;
+}
+
+.project_carousel {
+  width: 70%;
+}
+
+.project-slider {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.slick-slider {
+  margin: 0 0 1em 0;
+}
+
+.slick-prev {
+  background: black;
+  left: -33px;
+}
+
+.slick-prev, .slick-next {
+  background: black;
+}
+
+
+#project-prev {
+  color: white;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #EB7F00 !important;
+}
+
+.slick-prev-hover {
+  color: black;
+  background-color: black
+}
+
+.project-thumbnails {
+  width: 100%;
+}
+
+.projectSingle-wrapper {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+.projectSingle-title {
+  font-size: 1.3em;
+  font-family: 'Fjalla One';
+  color:#EB7F00;
+  letter-spacing: .1em;
+  margin: 0;
+  border-bottom: 1px solid #225378;
+}
+
+.projectSingle-description {
+  font-family: 'Cantarell';
+  margin: 0.5em 0 2em 0;
+}
+
+.projectSingle-skills {
+  font-family: 'Cantarell';
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+}
+
+.projectSingle-skills__skill {
+  margin: 0;
+  background-color: #225378;
+  margin: .5em .2em;
+  color: white;
+  padding: .5em .5em;
+  text-align: center;
+  font-size: .8em;
+  border: 2px solid black;
+  height: 10%;
+  text-transform: uppercase;
+}
+
+.projectSingle-subtitle {
+  font-family: 'Fjalla One';
+  letter-spacing: .1em;
+  color:#EB7F00;
+  margin: 1.5em 0 .4em 0;
+  border-bottom: 1px solid #225378;
+}
+
+.project-image {
+    width: 400px;
+}
+
+/* .project_images {
+  width: 40%;
+} */
+
+.projectSingle_images {
+  width: 40%;
+}
+
+#kcresponsive {
+  display: flex;
+  padding: 3em 0;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 90%;
+  padding-top: 1em;
+}
+
+.aboutMe-description {
+  width: 100%;
+  font-family: 'Cantarell', sans-serif;
+}
+
+.aboutMe-description__bullets {
+  padding: 0 0 .5em 0;
+}
+
+.aboutMe-description__links {
+  color: #EB7F00;
+} 
+
+.aboutMe-description__links:hover {
+  background-color: #225378;
+  color: white;
+  padding: 0 .4em;
+} 
+
+.links {
+  background-color: #225378;
+  color: white;
+  padding: 0 .4em;
+}
+
+.aboutMe-list {
+  display: flex;
+}
+
+.aboutMe-blog {
+  font-size: 1.2em;
+}
+
+.portfolio-title {
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: .2em solid green;
+  width: 40%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.skills-title {
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: .2em solid green;
+  width: 20%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.aboutMe__skills>li {
+  background-color: orange;
+  margin: .5em .2em;
+  color: white;
+  padding: .5em .5em;
+  text-align: center;
+  font-size: 1em;
+  border: 2px solid black;
+  height: 10%;
+  text-transform: uppercase;
+}
+
+.skills {
+  height: 100%;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+}
+
+.tech>li {
+  background-color:#225378;
+  margin: .5em .2em;
+  color: white;
+  padding: .5em .5em;
+  text-align: center;
+  font-size: .65em;
+  border: 2px solid black;
+  height: 10%;
+  text-transform: uppercase;
+}
+
+.tech-skills {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 80%;
+  justify-content: center;
+}
+
+.tech-skills>li {
+  padding: 1em;
+}
+
+#kcphone {
+  width: 50%;
+  position: relative;
+  top: 22%;
+  left: -22%;
+}
+
+.cinnamonmobile {
+  width: 30%;
+}
+
+.rentalbayshz {
+  width: 50%;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.resources-list {
+  display: flex;
+}
+
+.carmona-links {
+  display: flex;
+  font-size: 1.5em;
+  padding: 0;
+}
+
+.carmona-links>li {
+  padding: .5em .5em .5em 0;
+}
+
+.carmona-links_link, .aboutMe-blog {
+  color: #EB7F00;
+}
+
+.carmona-links_link:hover {
+  background-color: #225378;
+  color: white;
+  padding: 0 .2em;
+}
+
+a:hover {
+  background-color: #225378;
+  color: white;
+  padding: 0 .4em;
+}
+
+.App-nav_link > a:hover {
+  color: white;
+}
+
+
+
+@media screen and (min-width: 800px) {
+  .project-description {
+      width: 90%;
+      text-align: left;
+  }
+  .tech-skills {
+      margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+      grid-template-columns: 100%;
+  }
+  .aboutMe {
+      flex-direction: column;
+      text-align: center;
+  }
+  .tech-skills {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+  }
+  .tech-skills>li {
+      padding: .2em;
+  }
+  footer {
+      width: 90%;
+  }
+  .carmona-links {
+      display: flex;
+      flex-direction: column;
+  }
+  .carmona-links>li {
+      padding: .5em 0;
+  }
+  .header__title {
+      justify-content: center;
+  }
+  .tech-skills {
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .projects {
+    flex-direction: column;
+  }
+  .project-image {
+    width: 95%;
+  }
+  .project-image-container {
+    margin: 1em auto;
+  }
+}
