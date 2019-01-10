@@ -54,9 +54,7 @@ class App extends Component {
                 <li>
                     <a href="https://www.github.com/jcarmona120" target="_blank" className="carmona-links_link">GITHUB</a>
                 </li>
-                <li>
-                    <a href="https://www.twitter.com/jawannforall" target="_blank" className="carmona-links_link">TWITTER</a>
-                </li>
+
          
                 <li>
                     <a href="https://codepen.io/jcarmona120/" target="_blank" className="carmona-links_link">CODEPEN</a>
