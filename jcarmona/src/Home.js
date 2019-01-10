@@ -28,24 +28,12 @@ const Home = props => {
                         I'm a fast learning, jack of all trades who adapts to any challenge. Over the past few years, I've created a <a href="https://www.youtube.com/watch?v=BMKfJ0rEjDo" className="aboutMe-description__links">youtube sketch video with over 10k views</a>, run a successful standup comedy show,
                         and started a culinary event company called <a href="http://www.thekitchenclash.com" className="aboutMe-description__links">Kitchen Clash</a>. While these have been fun for me, web development is what truly drives me.
                         </li>
+
+                        <li>
+                        Want to work together? Contact me at carmona.jawann@gmail.com!
+                        </li>
                      
                     </ul>
-                     <div>
-                        <ul className="carmona-links">
-                            <li>
-                                <a href="https://www.github.com/jcarmona120" className="carmona-links_link">GITHUB</a>
-                            </li>
-                            <li>
-                                <a href="https://www.twitter.com/jawannforall" className="carmona-links_link">TWITTER</a>
-                            </li>
-                            <li>
-                                <a href="https://codepen.io/jcarmona120/" className="carmona-links_link">CODEPEN</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <p>
-                        <a href="https://medium.com/@jawanncarmona" className="aboutMe-blog carmona-links_link">Check out my latest blog post here!</a>
-                    </p>
                 </div>
 
         </div>

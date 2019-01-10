@@ -2,16 +2,17 @@
 
 a {
   text-decoration: none;
-  
 }
 
-
+h4 {
+  margin: 1em 0 0;
+}
 
 .App-title {
   color: white;
   font-family: 'Fjalla One', monospace;
   letter-spacing: .15em;
-  margin: 1em 0 0 0;
+  margin: 0;
 }
 
 .App-title > a {
@@ -26,7 +27,6 @@ a {
 .App-header {
   background-color: #225378;
   border-bottom: .5em solid orange;
-  padding: 0px;
   color: white;
   display: -ms-flexbox;
   display: flex;
@@ -35,7 +35,10 @@ a {
   display: flex;
   flex-direction: column;
   letter-spacing: .2em;
+  padding: 2em 0;
 }
+
+
 
 .App-intro {
   font-size: large;
@@ -46,9 +49,10 @@ a {
   flex-direction: column;
 }
 
+
+
 .App-nav_link {
   padding: 0 1em;
-  font-size: 1.2em;
   font-family: 'Staatliches', sans-serif;
 }
 
@@ -115,6 +119,18 @@ ul {
   width: 50%;
   border-radius: 50%;
   border: 1.5em solid #EB7F00;
+  margin: 4em 0px;
+  animation: borderGrow;
+  animation-duration: 1.5s;
+}
+
+@keyframes borderGrow {
+  from {
+    border: 0 solid #EB7F00;
+  }
+  to {
+    border: 1.5em solid #EB7F00;
+  }
 }
 
 
@@ -178,6 +194,12 @@ img {
 
 .project-image-container {
   margin: 1em 3em 1em 0;
+}
+
+.project-image-container > a:hover {
+  background-color: initial;
+  overflow: hidden;
+  padding: 0;
 }
 
 .project-description {
@@ -282,6 +304,11 @@ img {
     width: 400px;
 }
 
+.project-image:hover {
+  transform: scale(1.03);
+  overflow: hidden;
+}
+
 /* .project_images {
   width: 40%;
 } */
@@ -298,11 +325,11 @@ img {
 .aboutMe {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   width: 90%;
   margin: 0 auto;
   height: 90%;
   padding-top: 1em;
+  min-height: calc(76vh - 66px);
 }
 
 .aboutMe-description {
@@ -429,8 +456,6 @@ img {
 
 .carmona-links {
   display: flex;
-  font-size: 1.5em;
-  padding: 0;
 }
 
 .carmona-links>li {
@@ -439,21 +464,51 @@ img {
 
 .carmona-links_link, .aboutMe-blog {
   color: #EB7F00;
+  padding: 0 1em;
 }
 
 .carmona-links_link:hover {
-  background-color: #225378;
   color: white;
-  padding: 0 .2em;
+  padding: 0 1em;
 }
 
 a:hover {
   background-color: #225378;
   color: white;
-  padding: 0 .4em;
 }
 
 .App-nav_link > a:hover {
+  color: white;
+}
+
+.hamburger-icon__line {
+  width: 24px;
+  height: 4px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.hamburger-icon {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+}
+
+footer {
+  display: flex;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 2em auto 0;
+  background-color: #225378; 
+}
+
+.copyright {
   color: white;
 }
 
@@ -467,6 +522,12 @@ a:hover {
   .tech-skills {
       margin: 0 auto;
   }
+  .aboutMe__image {
+    margin: 4em 0px;
+  }
+  .App-header {
+    padding: 1em 0 0 0;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -477,6 +538,9 @@ a:hover {
       flex-direction: column;
       text-align: center;
   }
+  .aboutMe__image {
+    margin: 1em 0px;
+  }
   .tech-skills {
       display: flex;
       text-align: center;
@@ -485,20 +549,30 @@ a:hover {
   .tech-skills>li {
       padding: .2em;
   }
-  footer {
-      width: 90%;
+
+  .app-nav-mobile > ul {
+    display: none;
+    position: absolute;
+    top: 0px;
+    z-index: 9999;
+    background-color: orange;
+    width: 100vw;
+    height: 100vh;
+    color: white;
   }
+
   .carmona-links {
       display: flex;
       flex-direction: column;
   }
   .carmona-links>li {
-      padding: .5em 0;
+      padding: .4em 0;
   }
   .header__title {
       justify-content: center;
   }
-  .tech-skills {
+  footer {
+    flex-direction: column;
   }
 }
 

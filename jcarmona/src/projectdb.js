@@ -16,7 +16,7 @@ module.exports = {
         },
         "abelcinebays": {
             "name": "Abel Cine Rental Bay Chart",
-            "website": "http://www.ahtuki.com/rentalbays/",
+            "website": "",
             "short_description": "A website that features an admin panel, a welcome screen that faces clients when they enter the facility, a front-facing map for clients to find their rental bay, and back of house map that features more information about clients for staff.",
             "description": "Designed multiple maps that reflected information input on an admin page for a film and video rental house. A vertical interface and admin page were built first using HTML5 and CSS. Utitlized CSS grid to build organize the bays correctly. Used vanilla Javascript and a Firebase database to supply the data input from admin page to the front-facing vertical interface upon data change.",
             "images": "https://s3.amazonaws.com/jc-images120/rentalbayadmin.png",

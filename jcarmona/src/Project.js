@@ -11,7 +11,7 @@ const Project = function Project(props) {
     return (
         <div className="projects kitchenclash">
             <div className="project-image-container">
-                <img src={props.image} alt="website sample" className="project-image"/>
+                <Link to={props.link}><img src={props.image} alt="website sample" className="project-image"/></Link>
             </div>
             <div>
                 <h3 className="project-title" ><Link to={props.link}>{props.title}</Link></h3>

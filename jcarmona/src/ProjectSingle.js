@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 const ProjectSingle = props => {
-    console.log(props)
+
     const { project } = props
     const projectName = project.name.split(' ').join('').replace(/['"]+/g, '').toLowerCase()
     const thumbnails = [
@@ -14,7 +14,7 @@ const ProjectSingle = props => {
         './images/' + projectName + '/thumbnails/' + projectName + '_two.png',
         './images/' + projectName + '/thumbnails/' + projectName + '_three.png'
     ]
-    console.log(thumbnails)
+
     const showThumbnails = thumbnails.map(thumbnail => {
         try {
             return <div class="project_carousel"><img src={require(`${thumbnail}`)} alt="project images" class="project-thumbnails" /></div>
@@ -23,8 +23,7 @@ const ProjectSingle = props => {
            }
         
     })
-
-
+    
     const techStack = project.skills.map(skill => <li className="projectSingle-skills__skill">{skill}</li>)
 
     var settings = {
@@ -40,13 +39,23 @@ const ProjectSingle = props => {
         prevArrow: <p id="project-prev">Prev</p>,
       };
 
+    const website = project.website
+    console.log(website.length)
+
+
+
     console.log(showThumbnails)
 
     return (
         <div class="wrapper">
             <div class="projectSingle-wrapper">
                 <div>
-                    <h1 class="projectSingle-title">{project.name}</h1>     
+                    <h1 class="projectSingle-title">{project.name}</h1>  
+                    {website.length > 0 ? 
+                        <p class="projectSingle-website"><a href={project.website}>Visit the Website</a></p>         
+                        : null 
+                    }
+                    
                 </div>
                 <div>
                     <p class="projectSingle-description">{project.short_description}</p>

@@ -10,12 +10,14 @@ import './App.css';
 import Home from './Home';
 import Projects from './Projects';
 import ProjectSingle from './ProjectSingle';
+import Navigation from './Nav';
 
 import Github from './images/github-10-xxl.png'
 import Twitter from './images/twitter-5-xxl.png'
 import Codepen from './images/codepen_logo_html_code_css_javascript_programming-512.png';
 
 class App extends Component {
+
   render() {
     return (
       <Router>
@@ -26,13 +28,8 @@ class App extends Component {
                 <p className="App-title_subtitle">Full Stack Web Developer</p>
               </div>
               
-              <div>
-                <ul class="App-nav">
-                <li class="App-nav_link ">
-                  <Link to="/projects">Projects</Link>
-                </li>
-              </ul>
-            </div>
+
+              <Navigation />
           </header>
             <Route exact path="/" component={Home} />
             <Route 
@@ -49,7 +46,28 @@ class App extends Component {
               }
             />
             <Route exact path="/projects" component={Projects} />
-            
+            <footer>
+              <ul className="carmona-links">
+                <li>
+                  <Link to="/projects" className="carmona-links_link">PORTFOLIO</Link>
+                </li>
+                <li>
+                    <a href="https://www.github.com/jcarmona120" target="_blank" className="carmona-links_link">GITHUB</a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/jawannforall" target="_blank" className="carmona-links_link">TWITTER</a>
+                </li>
+         
+                <li>
+                    <a href="https://codepen.io/jcarmona120/" target="_blank" className="carmona-links_link">CODEPEN</a>
+                </li>
+                <li>
+                    <a href="https://medium.com/@jawanncarmona" target="_blank" className="carmona-links_link">BLOG</a>
+                </li>
+              </ul>
+
+              <p className="copyright">© Jawann Carmona --- {new Date().getFullYear()}</p>
+            </footer>
         </div>
       </Router>
     );
