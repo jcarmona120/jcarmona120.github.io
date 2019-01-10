@@ -37,7 +37,7 @@ export default class Navigation extends Component {
                 <NavBar mobileMenu = {this.state.mobileMenu}>
                     <ul className="carmona-links">
                         <li>
-                            <h4><Link to="/projects" className="carmona-links_link">PORTFOLIO</Link></h4>
+                            <h3><Link to="/projects" className="carmona-links_link">PORTFOLIO</Link></h3>
                         </li>
                     </ul>
                 </NavBar>

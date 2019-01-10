@@ -50,11 +50,13 @@ const ProjectSingle = props => {
         <div class="wrapper">
             <div class="projectSingle-wrapper">
                 <div>
-                    <h1 class="projectSingle-title">{project.name}</h1>  
-                    {website.length > 0 ? 
-                        <p class="projectSingle-website"><a href={project.website}>Visit the Website</a></p>         
-                        : null 
-                    }
+                {website.length > 0 ? 
+                    <h1 class="projectSingle-title">{project.name}<span class="projectSingle-website"><a href={project.website}>Visit the Website</a></span></h1>
+                    : <h1 class="projectSingle-title">{project.name}</h1>
+                }
+
+                      
+                   
                     
                 </div>
                 <div>

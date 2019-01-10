@@ -4,8 +4,14 @@ a {
   text-decoration: none;
 }
 
-h4 {
+h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-title {
@@ -265,6 +271,13 @@ img {
   letter-spacing: .1em;
   margin: 0;
   border-bottom: 1px solid #225378;
+  display: flex;
+  align-items: baseline;
+}
+
+.projectSingle-website {
+  font-size: .7em;
+  padding: 0 0 0 2.5em;
 }
 
 .projectSingle-description {
@@ -329,7 +342,7 @@ img {
   margin: 0 auto;
   height: 90%;
   padding-top: 1em;
-  min-height: calc(76vh - 66px);
+  flex: 1;
 }
 
 .aboutMe-description {
@@ -456,6 +469,7 @@ img {
 
 .carmona-links {
   display: flex;
+  margin: .5em 0;
 }
 
 .carmona-links>li {
@@ -510,6 +524,7 @@ footer {
 
 .copyright {
   color: white;
+  font-size: .8em;
 }
 
 
