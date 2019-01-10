@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.d9bcd02d.css",
-  "main.css.map": "static/css/main.d9bcd02d.css.map",
-  "main.js": "static/js/main.131d3605.js",
-  "main.js.map": "static/js/main.131d3605.js.map",
+  "main.css": "static/css/main.32b957ea.css",
+  "main.css.map": "static/css/main.32b957ea.css.map",
+  "main.js": "static/js/main.90dd0ca5.js",
+  "main.js.map": "static/js/main.90dd0ca5.js.map",
   "static/media/abelcinebaywatchwebapp_index.png": "static/media/abelcinebaywatchwebapp_index.6c03d4be.png",
   "static/media/abelcinebaywatchwebapp_one.png": "static/media/abelcinebaywatchwebapp_one.e14e96d3.png",
   "static/media/abelcinebaywatchwebapp_three.png": "static/media/abelcinebaywatchwebapp_three.d882f7c6.png",
@@ -20,6 +20,7 @@
   "static/media/dailybeastclone.png": "static/media/dailybeastclone.6d9ede09.png",
   "static/media/dbclone.png": "static/media/dbclone.2821193e.png",
   "static/media/github-10-xxl.png": "static/media/github-10-xxl.90b694bb.png",
+  "static/media/github.svg": "static/media/github.76fb1cc4.svg",
   "static/media/jawann.jpg": "static/media/jawann.d695f509.jpg",
   "static/media/jovonwork.png": "static/media/jovonwork.b56edf02.png",
   "static/media/kcphone.png": "static/media/kcphone.cc2acb84.png",
@@ -41,5 +42,6 @@
   "static/media/studiophantasmagoria_three.png": "static/media/studiophantasmagoria_three.3f7306be.png",
   "static/media/studiophantasmagoria_two.png": "static/media/studiophantasmagoria_two.b4aacc87.png",
   "static/media/twitter-5-xxl.png": "static/media/twitter-5-xxl.953a0418.png",
+  "static/media/twitter-logo-button.svg": "static/media/twitter-logo-button.f373105b.svg",
   "static/media/wsproductpage.png": "static/media/wsproductpage.a9d92375.png"
 }
