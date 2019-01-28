@@ -57,7 +57,7 @@ module.exports = {
             "name":"Cinnamon",
             "website": "http://cinnamonapp.herokuapp.com",
             "short_description": "Proof Of Concept for App that helps writers find synonyms, rhyming words, and other forms of inspiration.",
-            "description": "A prototype of a personal project using the Datamuse API to create a fun to use thesaurus. Currently, I am looking to change out the API and switch to a Python backend for better natural language processing.",
+            "description": "A prototype of a personal project using the Words API to create a fun to use writing tool. Currently working on adding a more interactive experience where users can highlight words and a Grammarly-like editing tool.",
             "images": "https://s3.amazonaws.com/jc-images120/cinnamon_two.png",
             "skills": [
                 "React", "Words API", "SemanticUI", "TypeScript"
