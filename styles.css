@@ -1,0 +1,41 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Source Serif 4';
+}
+
+.container {
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+svg {
+    margin-top: 50px;
+    animation: spin 20s linear infinite;
+    transform-origin: center;
+    transform: rotate(180deg);
+}
