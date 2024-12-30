@@ -477,8 +477,26 @@ section {
     transition: color 0.3s ease;
 }
 
+.contact-info a:not(:first-child)::before {
+    content: "-";
+    margin: 0 0.5rem;
+}
+
 .contact-info a:hover {
     color: #ff5252;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contact-info a:not(:first-child)::before {
+        display: none;
+    }
 }
 
 /* Personal Note */
@@ -690,12 +708,13 @@ section {
     }
     
     .skills-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .contact-info {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 0.5rem;
         text-align: center;
     }
