@@ -95,6 +95,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Toggle experience details
+    document.querySelectorAll('.toggle-details').forEach(button => {
+        button.addEventListener('click', () => {
+            const details = button.nextElementSibling;
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+            
+            button.setAttribute('aria-expanded', !isExpanded);
+            details.classList.toggle('collapsed');
+            
+            const toggleText = button.querySelector('.toggle-text');
+            toggleText.textContent = isExpanded ? 'Show Details' : 'Hide Details';
+        });
+    });
+
     // Modal functionality
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImage');
